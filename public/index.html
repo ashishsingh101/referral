@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=in.juspay.nammayatri">
+    <title>Redirect Page</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the value from the query parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const driverId = urlParams.get('driverId');
+
+            // Store the value in local storage
+            window.alert("driverId is : " + driverId);
+            localStorage.setItem('driverId', driverId);
+        });
+    </script>
+</head>
+<!-- <body>
+    <p>This page is redirecting...</p>
+</body> -->
+</html>
