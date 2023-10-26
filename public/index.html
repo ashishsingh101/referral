@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=in.juspay.nammayatri">
+    <meta http-equiv="refresh" content="0;url=https://nammayatri.in/link/rider/mvnw">
     <title>Redirect Page</title>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Get the value from the query parameter
+            // window.alert(localStorage.getItem('driverId'));
             const urlParams = new URLSearchParams(window.location.search);
             const driverId = urlParams.get('driverId');
 
             // Store the value in local storage
-            window.alert("driverId is : " + driverId);
             localStorage.setItem('driverId', driverId);
+            sessionStorage.setItem('driverIdSession', driverId);
+            Cache.put("id", driverId);
+            window.alert("driver Id is : " + driverId);
+            window.driverId = driverId;
         });
     </script>
 </head>
