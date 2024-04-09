@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+        {
+          "appID": "YM9U73Z2JM.in.juspay.nammayatri.debug",
+          "paths": ["*"]
+        }
+      ]
+    }
+  }

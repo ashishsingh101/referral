@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "appAssociation": "AUTO",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -14,6 +15,17 @@
     ],
     "frameworksBackend" : {
       "maxInstances": 2
-    }
+    },
+    "headers": [
+      {
+        "source": "/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    ]
   }
 }
